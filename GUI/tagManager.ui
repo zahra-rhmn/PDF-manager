@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>316</width>
+    <height>295</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tag Manager</string>
+  </property>
+  <widget class="QListWidget" name="tagsList">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>171</width>
+     <height>291</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="modifyButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>80</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modify</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="OKButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>260</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>120</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addNewTagButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>40</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add a New Tag</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="searchTagsLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>10</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Search Tags</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="choseTagsTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>170</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Chosen Tags</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
