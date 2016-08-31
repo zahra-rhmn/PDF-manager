@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
-from new import Ui_NEW
-from tagManager import Ui_TagManager
+from .new import Ui_NEW
+from .tagManager import Ui_TagManager
 
 
 class MyFirstGuiProgram(Ui_NEW):

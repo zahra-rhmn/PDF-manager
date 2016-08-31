@@ -16,21 +16,27 @@ class Ui_TagManager(object):
         self.tagsList = QtWidgets.QListWidget(Dialog)
         self.tagsList.setGeometry(QtCore.QRect(0, 0, 171, 291))
         self.tagsList.setObjectName("tagsList")
+
         self.modifyButton = QtWidgets.QPushButton(Dialog)
         self.modifyButton.setGeometry(QtCore.QRect(200, 80, 81, 23))
         self.modifyButton.setObjectName("modifyButton")
+
         self.OKButton = QtWidgets.QPushButton(Dialog)
         self.OKButton.setGeometry(QtCore.QRect(190, 260, 111, 23))
         self.OKButton.setObjectName("OKButton")
+
         self.deleteButton = QtWidgets.QPushButton(Dialog)
         self.deleteButton.setGeometry(QtCore.QRect(200, 120, 81, 23))
         self.deleteButton.setObjectName("deleteButton")
+
         self.addNewTagButton = QtWidgets.QPushButton(Dialog)
         self.addNewTagButton.setGeometry(QtCore.QRect(200, 40, 81, 23))
         self.addNewTagButton.setObjectName("addNewTagButton")
+
         self.searchTagsLineEdit = QtWidgets.QLineEdit(Dialog)
         self.searchTagsLineEdit.setGeometry(QtCore.QRect(180, 10, 113, 20))
         self.searchTagsLineEdit.setObjectName("searchTagsLineEdit")
+
         self.choseTagsTextEdit = QtWidgets.QPlainTextEdit(Dialog)
         self.choseTagsTextEdit.setGeometry(QtCore.QRect(190, 170, 111, 71))
         self.choseTagsTextEdit.setObjectName("choseTagsTextEdit")

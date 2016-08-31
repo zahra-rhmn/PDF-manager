@@ -1,6 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
-from tagManager import Ui_TagManager
+from .tagManager import Ui_TagManager
+
 
 class tagManagerController(Ui_TagManager):
     def __init__(self, dialog):
@@ -12,17 +13,16 @@ class tagManagerController(Ui_TagManager):
         self.modifyButton.clicked.connect(self.modifyTag)
         self.deleteButton.clicked.connect(self.deleteTag)
         self.OKButton.clicked.connect(self.done)
-        self.thread.connect(self.thread, SIGNAL("selectedItemsToString()"),self.choseTagsTextEdit.setPlainText)
-
-
-
+        self.thread.connect(self.thread, SIGNAL("selectedItemsToString()"), self.choseTagsTextEdit.setPlainText)
 
     def selectedItemsToString(self):
-        list  = self.tagsList.selectedItems()
-        result = ""
-        for item in list :
-            result += item + " "
-        return result
+        list = self.tagsList.selectedItems()
+        return " ".join(list)  # is this the same ? if yes hit yourself!
+        # Abtin and Zahra Code!
+        # result = ""
+        # for item in list:
+        #     result += item + " "
+        # return result
 
     def addNewTag(self):
         return
@@ -41,9 +41,8 @@ class tagManagerController(Ui_TagManager):
         return
 
     def handleTagList(self):  # pay attention to show tags in chosen tags
-                              # pay attention to filter tags according to text written in the filter part
+        # pay attention to filter tags according to text written in the filter part
         return
-
 
 
 if __name__ == '__main__':
